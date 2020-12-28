@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "module": "esnext",
+    "target": "es5",
+    "allowJs": true,
+    "lib": [
+      "es6",
+      "dom",
+      "es2015.promise"
+    ],
+    "noImplicitThis": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+  }
+}
