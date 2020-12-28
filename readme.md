@@ -2,7 +2,7 @@
 一个简单的 webpack, react 开发环境 playground，支持 image import & css import。
 轻量简单，同时兼顾兼容性。方便 demo 创作。
 
-## 依赖
+## dependencies
 ### install dependencies
 ```
 npm i --save core-js react react-dom  regenerator-runtime whatwg-fetch
@@ -48,5 +48,6 @@ npm i --save-dev @babel/cli @babel/core @babel/preset-env @babel/preset-react @b
 }
 ```
 
-## web lib 创作
-全局安装或者本地安装 weblib-cli。在 app 目录下创建不同的 `typescript lib` 以便调试。
+## create web lib
+全局安装或者本地安装 weblib-cli  
+在 app 目录下创建不同的 `typescript lib & react component` 以便调试。
