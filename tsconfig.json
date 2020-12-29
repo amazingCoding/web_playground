@@ -5,7 +5,6 @@
     "resolveJsonModule": true,
     "module": "esnext",
     "target": "es5",
-    "allowJs": true,
     "lib": [
       "es6",
       "dom",
@@ -14,5 +13,8 @@
     "noImplicitThis": true,
     "jsx": "react",
     "moduleResolution": "node",
-  }
+  },
+  "exclude": [
+    "node_modules"
+  ]
 }
