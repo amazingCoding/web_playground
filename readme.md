@@ -48,6 +48,12 @@ npm i --save-dev @babel/cli @babel/core @babel/preset-env @babel/preset-react @b
 }
 ```
 
-## create web lib
-全局安装或者本地安装 weblib-cli  
-在 app 目录下创建不同的 `typescript lib & react component` 以便调试。
+
+## antd
+* npm i --save antd @ant-design/icons 
+* 配置 LESS
+  * npm i --save-dev less less-loader
+  * antStyleRule
+* 配置按需引入
+  * npm i --save-dev babel-plugin-import
+  * webpack 配置

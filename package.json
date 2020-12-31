@@ -43,8 +43,11 @@
   "author": "sanyuelnv",
   "license": "ISC",
   "dependencies": {
+    "@ant-design/icons": "^4.3.0",
+    "antd": "^4.9.4",
     "core-js": "^3.8.1",
     "react": "^17.0.1",
+    "react-cropper": "^2.1.4",
     "react-dom": "^17.0.1",
     "regenerator-runtime": "^0.13.7",
     "whatwg-fetch": "^3.5.0"
@@ -61,6 +64,7 @@
     "@typescript-eslint/parser": "^4.11.0",
     "autoprefixer": "^10.1.0",
     "babel-loader": "^8.2.2",
+    "babel-plugin-import": "^1.13.3",
     "css-loader": "^5.0.1",
     "eslint": "^7.16.0",
     "eslint-plugin-react": "^7.21.5",
@@ -68,6 +72,8 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
     "ip": "^1.1.5",
+    "less": "^4.0.0",
+    "less-loader": "^7.2.1",
     "postcss": "^8.2.1",
     "postcss-loader": "^4.1.0",
     "style-loader": "^2.0.0",

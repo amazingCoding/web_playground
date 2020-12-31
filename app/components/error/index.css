@@ -1,0 +1,28 @@
+.app{
+  width: 100%;
+  height: 100%;
+  overflow: hidden auto;
+  background-color: #000;
+  color: #999;
+  box-sizing: border-box;
+  padding:20px;
+}
+.warnning{
+  color: red;
+  font-size: 18px;
+  
+}
+.title{
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color:rgb(190, 190, 190)
+}
+.componentStack{
+  white-space: pre;
+}
+
+.titleCenter{
+  font-size: 30px;
+  text-align: center;
+}

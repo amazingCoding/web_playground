@@ -1,0 +1,135 @@
+.sanYuePicker{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+}
+.sanYuePickerCover{
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,1);
+  position: absolute;
+  opacity: 0.0;
+  transition: 0.6s;
+}
+.sanYuePickerCoverShow{
+  opacity: 0.5;
+  
+}
+.sanYuePickerMain{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 350px;
+  background: #FFFFFF;
+  border-radius: 30px 30px 0 0;
+  border-radius: 30px 30px 0px 0px;
+  overflow: hidden;
+  transform: translateY(350px);
+  transition: .6s
+}
+.absoluteShow{
+  transform: translateY(0);
+  
+}
+.sanYuePickerTouchHeader{
+  height: 34px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sanYuePickerSlide{
+  width: 40px;
+  height: 4px;
+  background: #CCCCCC;
+  border-radius: 2px;
+  border-radius: 2px;
+}
+.sanYuePickerTitle{
+  font-family: PingFangSC-Medium;
+  font-weight: bolder;
+  font-size: 18px;
+  color: #333333;
+  letter-spacing: 0;
+  text-align: justify;
+  line-height: 18px;
+  text-align: center;
+  height: 18px;
+  margin:9px 0;
+}
+.pickerItems{
+  width: 100%;
+  height: 230px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.pickerItemsCol{
+  flex:1;
+}
+.pickerItemsColWrapper{
+  display: block;
+}
+.pickerItem{
+  font-family: PingFangSC-Regular;
+  font-size: 20px;
+  color: #999999;
+  letter-spacing: 0;
+  text-align: justify;
+  line-height: 20px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pickerItemActive{
+  font-family: PingFangSC-Medium;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.sanYuePickerLineTop{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 92px;
+  z-index: 2;
+  background-image: linear-gradient(to bottom, #fff, hsla(0, 0%, 100%, .4));
+  pointer-events: none;
+  background-repeat: no-repeat;
+  /* 部分手机需要 translateZ 来开启首次渲染时候强制渐变渲染 */
+  transform: translateZ(0);
+}
+.sanYuePickerLineBottom{
+  composes:sanYuePickerLineTop;
+  top: auto;
+  bottom: 0;
+  background-image: linear-gradient(to top, #fff, hsla(0, 0%, 100%, .4)); 
+}
+
+.sanYuePickerBottom{
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+.sanYuePickerBtn{
+  flex:1;
+  font-family: PingFangSC-Regular;
+  font-size: 18px;
+  color: #666666;
+  letter-spacing: 0;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.sanYuePickerBtnOK{
+  composes:sanYuePickerBtn;
+}

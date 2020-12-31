@@ -1,0 +1,40 @@
+.tailor{
+  position: relative;
+  /* padding: 20px 0; */
+}
+.upBtn{
+  position: relative;
+  cursor: pointer;
+  display: block;
+  width: 120px;
+}
+.upBtn:last-child{
+  margin-top: 20px;
+}
+.uploadBoxFile{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+.btnArr{
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.nullImage{
+  box-sizing: border-box;
+  border:1px solid #999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #555;
+}
+.uploadBox{
+  
+}

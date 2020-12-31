@@ -41,7 +41,14 @@ const typeScriptRule = {
         ...presets
       ],
       plugins: [
-        "@babel/plugin-proposal-class-properties"
+        "@babel/plugin-proposal-class-properties",
+        [
+          "import",
+          {
+            "libraryName": "antd",
+            "style": true
+          }
+        ]
       ]
     }
   },
@@ -74,6 +81,24 @@ const modulesStyleRule = {
     postCssLoader
   ],
   include: [appDir]
+}
+const antStyleRule = {
+  test: /\.less$/,
+  use: [
+    'style-loader',
+    'css-loader',
+    {
+      loader: 'less-loader', options: {
+        lessOptions: {
+          modifyVars: {
+            // 'primary-color': '#F2743A',
+          },
+          javascriptEnabled: true
+        }
+      }
+    }
+  ],
+  include: [path.resolve(process.cwd(), 'node_modules/antd')]
 }
 const commonStyleRule = {
   test: new RegExp(`^(.*\\.common).*\\.css`),
